@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
 
@@ -11,6 +11,7 @@
   <title>Mon CV - MOUTINARD Killian</title>
 
   <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom fonts for this template -->
@@ -38,22 +39,46 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
             <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">A propos</a>
+            <a class="nav-link js-scroll-trigger" href="index.php#about">A propos</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#experience">Expériences</a>
+            <a class="nav-link js-scroll-trigger" href="index.php#experience">Expériences</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#education">Formation</a>
+            <a class="nav-link js-scroll-trigger" href="index.php#education">Formation</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#skills">Compétences</a>
+            <a class="nav-link js-scroll-trigger" href="index.php#skills">Compétences</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#interests">Intérêts</a>
+            <a class="nav-link js-scroll-trigger" href="index.php#interests">Intérêts</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#awards">Diplômes</a>
+            <a class="nav-link js-scroll-trigger" href="index.php#awards">Diplômes</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href=""></a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href=""></a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href=""></a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href=""></a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href=""></a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href=""></a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href=""></a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="connexion.php">Connexion</a>
             </li>
         </ul>
         </div>

@@ -275,9 +275,9 @@
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
       <div class="w-100">
-        <h2 class="mb-5">Interests</h2>
-        <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-        <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
+        <h2 class="mb-5">Centres d'intérêt</h2>
+        <p>En dehors de mes études dans le milieu de l'informatique, je passe pratiquement tout mon temps libre à faire du sport dans le domaine du basketball et de la musculation. J'aime beaucoup passer du temps avec mes amis, sortir pour se balader ou bien aller à des concerts et festivals.</p>
+        <p class="mb-0">Lorsque je suis chez moi, je regarde beaucoup de films et de séries fantastiques et d'horreur mais je ne rate pas l'occasion de regarder des matchs de différents sports. Le reste de mon temps libre est consacré aux jeux vidéos en ligne avec mes amis  mais aussi à me renseigner et tenter de découvrir les nouvelles technologies.</p>
       </div>
     </section>
 

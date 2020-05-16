@@ -214,9 +214,9 @@
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
       <div class="w-100">
-        <h2 class="mb-5">Skills</h2>
+        <h2 class="mb-5">Compétences</h2>
 
-        <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+        <div class="subheading mb-3">Langages de programmation &amp; Outils techniques</div>
         <ul class="list-inline dev-icons">
           <li class="list-inline-item">
             <i class="fab fa-html5"></i>
@@ -228,48 +228,45 @@
             <i class="fab fa-js-square"></i>
           </li>
           <li class="list-inline-item">
-            <i class="fab fa-angular"></i>
+            <i class="fab fa-php"></i>
           </li>
           <li class="list-inline-item">
-            <i class="fab fa-react"></i>
+            <i class="fab fa-windows"></i>
           </li>
           <li class="list-inline-item">
-            <i class="fab fa-node-js"></i>
+            <i class="fab fa-linux"></i>
           </li>
           <li class="list-inline-item">
-            <i class="fab fa-sass"></i>
+            <i class="fab fa-git"></i>
           </li>
           <li class="list-inline-item">
-            <i class="fab fa-less"></i>
+            <i class="fab fa-python"></i>
           </li>
           <li class="list-inline-item">
-            <i class="fab fa-wordpress"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-gulp"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-grunt"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-npm"></i>
+            <i class="fab fa-c++"></i>
           </li>
         </ul>
 
-        <div class="subheading mb-3">Workflow</div>
+        <div class="subheading mb-3">Compétences transverses</div>
         <ul class="fa-ul mb-0">
           <li>
             <i class="fa-li fa fa-check"></i>
-            Mobile-First, Responsive Design</li>
+            Responsive Design, UX/UI Design</li>
           <li>
             <i class="fa-li fa fa-check"></i>
-            Cross Browser Testing &amp; Debugging</li>
+            Base de données : phpMyAdmin &amp; MariaDB</li>
           <li>
             <i class="fa-li fa fa-check"></i>
-            Cross Functional Teams</li>
+            Connaissances en réseaux &amp; Développement d'un VPN à distance</li>
           <li>
             <i class="fa-li fa fa-check"></i>
-            Agile Development &amp; Scrum</li>
+            Algorithmique Python &amp; C</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Méthodes de Communication professionnelle</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Gestion de Projet Agile &amp; Scrum</li>
         </ul>
       </div>
     </section>

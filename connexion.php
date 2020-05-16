@@ -1,38 +1,40 @@
-<!DOCTYPE html>
-<html lang="fr">
+<?php require("inc/header_log.inc.php"); ?>
 
-<head>
+<hr>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>Connexion à Mon CV</title>
-
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
-  <!-- Custom styles for this template -->
-  <link href="css/resume.min.css" rel="stylesheet">
-
-</head>
-
-<form>
+<form method="POST" action="">
   <div class="form-group" style="width: 400px;">
     <label for="pseudo">Username</label>
-    <input type="text" class="form-control" id="pseudo" name="pseudo">
+    <input type="text" class="form-control" id="pseudo" name="pseudo" placeholder="Username">
   </div>
 <div class="form-group" style="width: 400px;">
     <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    <input type="password" class="form-control" id="Password" name="password" placeholder="Password">
   </div>
   <div class="form-group form-check">
     <input type="checkbox" class="form-check-input" id="souvenir" name="souvenir">
-    <label>Se souvenir de moi ?</label>
+    <label>Maintenir la connexion ?</label>
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary">Se connecter</button>
 </form>
+
+<hr>
+
+<a href="index.php">
+    <h6>Revenir à la page de mon CV</h6>
+</a>
+
+<?php
+session_start();
+
+if (!empty($_POST)) {
+    $_SESSION['pseudo'] = $_POST['pseudo'];
+    $_SESSION['password'] = $_POST['password'];
+}
+
+var_dump($_SESSION);
+
+?>
 
 <?php
 if (isset($_POST['souvenir']))

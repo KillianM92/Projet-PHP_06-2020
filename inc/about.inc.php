@@ -1,12 +1,14 @@
+<?php require("data/about_sql.inc.php"); ?>
+
 <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
       <div class="w-100">
-        <h1 class="mb-0">Killian
-          <span class="text-primary">Moutinard</span>
+        <h1 class="mb-0"><?php echo $prenom1->prenom?>
+          <span class="text-primary"><?php echo $nom1->nom?></span>
         </h1>
-        <div class="subheading mb-5">6 rue de la fontaine Henri IV · Chaville, IDF, 92370 · +33 6 68 74 20 72 ·
-          <a href="mailto:killian.moutinard@ynov.com">killian.moutinard@ynov.com</a>
+        <div class="subheading mb-5"><?php echo $adresse1->adresse?> · <?php echo $ville1->ville?>, <?php echo $province1->province?>, <?php echo $codepostal1->codepostal?> · <?php echo $numero_tel1->numero_tel?> ·
+          <a href="mailto:killian.moutinard@ynov.com"><?php echo $email1->email?></a>
         </div>
-        <p class="lead mb-5">Etudiant en première année d'informatique chez YNOV.</p>
+        <p class="lead mb-5"><?php echo $description1->description?></p>
         <div class="social-icons">
           <a href="https://github.com/KillianM92">
             <i class="fab fa-github"></i>

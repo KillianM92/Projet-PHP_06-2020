@@ -1,0 +1,43 @@
+Table Expérience :
+
+INSERT INTO experience (metier, entreprise, description, date) VALUES ('Arbitre officiel', 'Ligue Ile de France de Basketball', 'Arbitrage de matchs officiels de basket dans le département des Hauts-de-Seine (92) et dans toute la région Ile-de-France depuis janvier 2020. Officiel de Jeunes-Région et de U9 à Seniors Pré-Régional.', 'Mars 2019 - Aujourd hui');
+
+INSERT INTO experience (metier, entreprise, description, date) VALUES ('Éducateur sportif', 'Dynamic Sèvres', 'Encadrement des enfants de l’école des sports. Remplacement de l’éducateur sportif principal dans la section « Basketball » et « Badminton ». Création d’activités sportives et divertissantes pour les enfants de 6 à 11 ans.', 'Octobre 2019 - Aujourd hui');
+
+INSERT INTO experience (metier, entreprise, description, date) VALUES ('Coach de Basketball', 'Val de Seine Basket', 'Préparation des entraînements de la section Baby Basket (U7) et U9, coaching des enfants de 5 à 8 ans dans leur apprentissage du basketball en groupe de 20 à 30 enfants. Remplacements des coachs en cas d’indisponibilité pour les matchs officiels pour les sections U11 à U20.', 'Septembre 2017 - Aujourd hui');
+
+INSERT INTO experience (metier, entreprise, description, date) VALUES ('Serveur | Barman', 'Entrepôt Saint Claude', 'Accueil client, Prise de commande, Service à Table, Préparation des boissons au bar, Mise en place des plats avant service, Dressage de table, Préparation des desserts, Inventaire de boissons.', 'Juillet 2019 - Septembre 2019');
+
+INSERT INTO experience (metier, entreprise, description, date) VALUES ('Serveur', 'Entrepôt Saint Claude', 'Accueil client, Service à Table, Dressage de table.', 'Juin 2018 - Août 2018');
+
+INSERT INTO experience (metier, entreprise, description, date) VALUES ('Assistant-coach de Basketball', 'Basket Club Chaville', 'Préparation des entraînements de la section Baby Basket (U7) et U9, coaching des enfants de 5 à 8 ans dans leur apprentissage du basketball en groupe de 10 à 15 enfants.', 'Septembre 2014 - Juin 2017');
+
+INSERT INTO experience (metier, entreprise, description, date) VALUES ('Stage de découverte en informatique', 'TOTAL Global Services SAS', 'Découverte des environnements informatiques, des métiers de l’informatique, visite d’un datacenter et du siège à la Tour Coupole à La Défense.', 'Décembre 2015');
+
+
+Table Formation : 
+
+INSERT INTO formation (lieu, filiere, description_1, description_2, description_3, date) VALUES ('Lycée Jean-Pierre Vernant | Sèvres (92310)', 'Baccaulauréat Scientifique Option Informatique', 'Seconde Générale Section Européeenne Option Informatique & Création Numérique (2016/2017)', 'Première Scientifique Section Européenne (2017/2018)', ' Terminale Scientifique Section Européenne Option ISN (2018/2019)', 'Septembre 2016 - Juin 2019');
+
+INSERT INTO formation (lieu, filiere, description_1, description_2, description_3, description_4, date) VALUES ('Paris YNOV Campus', 'Ingésup informatique', 'Bachelor 1 (2019/2020)', 'Développement Logiciels', 'Infrastructure & Système d Informations', 'Technologies web & BDD', 'Septembre 2019 - Aujourd hui');
+
+
+Table Interest : 
+
+INSERT INTO interest (description) VALUE ('En dehors de mes études dans le milieu de l informatique, je passe pratiquement tout mon temps libre à faire du sport dans le domaine du basketball et de la musculation. J aime beaucoup passer du temps avec mes amis, sortir pour se balader ou bien aller à des concerts et festivals.');
+
+INSERT INTO interest (description) VALUE ('Lorsque je suis chez moi, je regarde beaucoup de films et de séries fantastiques et d horreur mais je ne rate pas l occasion de regarder des matchs de différents sports. Le reste de mon temps libre est consacré aux jeux vidéos en ligne avec mes amis  mais aussi à me renseigner et tenter de découvrir les nouvelles technologies.');
+
+Table Diplomes : 
+
+INSERT INTO diplomes (description) VALUE ('Permis de conduire Moto A2');
+
+INSERT INTO diplomes (description) VALUE ('Baccaulauréat Général Scientifique Mention Européenne Option Informatique Mention Assez Bien');
+
+INSERT INTO diplomes (description) VALUE ('Cambridge English Certificate Niveau B2 obtenu en Mars 2019');
+
+INSERT INTO diplomes (description) VALUE ('Cambridge English Certificate Niveau B1 obtenu en Mars 2017');
+
+INSERT INTO diplomes (description) VALUE ('Brevet des Collèges Option Européenne Mention Bien');
+
+INSERT INTO diplomes (description) VALUE ('ASSR 1 & 2');

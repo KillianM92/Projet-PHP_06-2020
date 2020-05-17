@@ -41,3 +41,8 @@ INSERT INTO diplomes (description) VALUE ('Cambridge English Certificate Niveau 
 INSERT INTO diplomes (description) VALUE ('Brevet des Collèges Option Européenne Mention Bien');
 
 INSERT INTO diplomes (description) VALUE ('ASSR 1 & 2');
+
+
+Table About : 
+
+INSERT INTO about (prenom, nom, adresse, ville, province, codepostal, numero_tel, email, description) VALUES ('Killian', 'Moutinard', '6 rue de la fontaine Henri IV', 'Chaville', 'IDF', 92370, '+33 6 68 74 20 72', 'killian.moutinard@ynov.com', 'Etudiant en première année d informatique chez YNOV.');

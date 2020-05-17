@@ -1,31 +1,33 @@
+<?php require("data/education_sql.inc.php"); ?>
+    
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
       <div class="w-100">
         <h2 class="mb-5">Formation</h2>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">Lycée Jean-Pierre Vernant | Sèvres (92310)</h3>
-            <div class="subheading mb-3">Baccaulauréat Scientifique Option Informatique</div>
-            <div>Seconde Générale Section Européeenne Option Informatique & Création Numérique (2016/2017)</div>
-            <div>Première Scientifique Section Européenne (2017/2018)</div>
-            <div>Terminale Scientifique Section Européenne Option ISN (2018/2019)</div>
+            <h3 class="mb-0"><?php echo $lieu1->lieu;?></h3>
+            <div class="subheading mb-3"><?php echo $filiere1->filiere;?></div>
+            <div><?php echo $description1->description_1;?></div>
+            <div><?php echo $description2->description_2;?></div>
+            <div><?php echo $description3->description_3;?></div>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">Septembre 2016 - Juin 2019</span>
+            <span class="text-primary"><?php echo $date1->date;?></span>
           </div>
         </div>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
           <div class="resume-content">
-            <h3 class="mb-0">Paris YNOV Campus</h3>
-            <div class="subheading mb-3">Ingésup informatique</div>
-            <p>Bachelor 1 (2019/2020)</p>
-            <div>Développement Logiciels</div>
-            <div>Infrastructure & Système d'Informations</div>
-            <div>Technologies web & BDD </div>
+            <h3 class="mb-0"><?php echo $lieu2->lieu;?></h3>
+            <div class="subheading mb-3"><?php echo $filiere2->filiere;?></div>
+            <p><?php echo $description4->description_1;?></p>
+            <div><?php echo $description5->description_2;?></div>
+            <div><?php echo $description6->description_3;?></div>
+            <div><?php echo $description7->description_4;?></div>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">Septembre 2019 - Aujourd'hui</span>
+            <span class="text-primary"><?php echo $date2->date;?></span>
           </div>
         </div>
 

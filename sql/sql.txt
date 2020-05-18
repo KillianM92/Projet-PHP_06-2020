@@ -43,6 +43,21 @@ INSERT INTO diplomes (description) VALUE ('Brevet des Collèges Option Européen
 INSERT INTO diplomes (description) VALUE ('ASSR 1 & 2');
 
 
-Table About : 
+Table About :
 
 INSERT INTO about (prenom, nom, adresse, ville, province, codepostal, numero_tel, email, description) VALUES ('Killian', 'Moutinard', '6 rue de la fontaine Henri IV', 'Chaville', 'IDF', 92370, '+33 6 68 74 20 72', 'killian.moutinard@ynov.com', 'Etudiant en première année d informatique chez YNOV.');
+
+
+Table Skills :
+
+INSERT INTO skills (description) VALUE ('Responsive Design, UX/UI Design');
+
+INSERT INTO skills (description) VALUE ('Base de données : phpMyAdmin & MariaDB');
+
+INSERT INTO skills (description) VALUE ('Connaissances en réseaux & Développement d un VPN à distance');
+
+INSERT INTO skills (description) VALUE ('Algorithmique Python & C');
+
+INSERT INTO skills (description) VALUE ('Méthodes de Communication professionnelle');
+
+INSERT INTO skills (description) VALUE ('Gestion de Projet Agile & Scrum');

@@ -37,19 +37,19 @@
             Responsive Design, UX/UI Design</li>
           <li>
             <i class="fa-li fa fa-check"></i>
-            Base de données : phpMyAdmin &amp; MariaDB</li>
+            Base de données : phpMyAdmin & MariaDB</li>
           <li>
             <i class="fa-li fa fa-check"></i>
-            Connaissances en réseaux &amp; Développement d'un VPN à distance</li>
+            Connaissances en réseaux & Développement d'un VPN à distance</li>
           <li>
             <i class="fa-li fa fa-check"></i>
-            Algorithmique Python &amp; C</li>
+            Algorithmique Python & C</li>
           <li>
             <i class="fa-li fa fa-check"></i>
             Méthodes de Communication professionnelle</li>
           <li>
             <i class="fa-li fa fa-check"></i>
-            Gestion de Projet Agile &amp; Scrum</li>
+            Gestion de Projet Agile & Scrum</li>
         </ul>
       </div>
     </section>

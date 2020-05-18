@@ -2,7 +2,7 @@
 
 <hr>
 
-<form method="POST" action="">
+<form method="POST" action="admin.php">
   <div class="form-group" style="width: 400px;">
     <label for="pseudo">Username</label>
     <input type="text" class="form-control" id="pseudo" name="pseudo" placeholder="Username">

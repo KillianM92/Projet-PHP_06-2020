@@ -23,6 +23,7 @@
       <h7>Revenir à la page de mon CV</h7>
   </a>
 </div>
+<br>
 
 <?php
 session_start();
@@ -33,6 +34,7 @@ $_SESSION['password'] = $_POST['password'];
 // var_dump($_SESSION);
 
 if ($_SESSION['username'] == $username1->username & $_SESSION['password'] == $password1->password) {
+  echo '<h4 style="padding-left: 400px;">Connexion réussie !!!</h4>';
   echo '<hr style="padding-left: 400px; width: 400px;">';
   include("admin.php");
 } else {

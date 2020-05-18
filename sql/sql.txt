@@ -61,3 +61,8 @@ INSERT INTO skills (description) VALUE ('Algorithmique Python & C');
 INSERT INTO skills (description) VALUE ('Méthodes de Communication professionnelle');
 
 INSERT INTO skills (description) VALUE ('Gestion de Projet Agile & Scrum');
+
+
+Table Login :
+
+INSERT INTO login (username, password) VALUES ('killian', 'admin');

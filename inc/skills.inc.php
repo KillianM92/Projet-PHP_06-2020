@@ -1,3 +1,5 @@
+<?php require("data/skills_sql.inc.php"); ?>
+    
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
       <div class="w-100">
         <h2 class="mb-5">Compétences</h2>
@@ -34,22 +36,22 @@
         <ul class="fa-ul mb-0">
           <li>
             <i class="fa-li fa fa-check"></i>
-            Responsive Design, UX/UI Design</li>
+            <?php echo $skill1->description; ?></li>
           <li>
             <i class="fa-li fa fa-check"></i>
-            Base de données : phpMyAdmin & MariaDB</li>
+            <?php echo $skill2->description; ?></li>
           <li>
             <i class="fa-li fa fa-check"></i>
-            Connaissances en réseaux & Développement d'un VPN à distance</li>
+            <?php echo $skill3->description; ?></li>
           <li>
             <i class="fa-li fa fa-check"></i>
-            Algorithmique Python & C</li>
+            <?php echo $skill4->description; ?></li>
           <li>
             <i class="fa-li fa fa-check"></i>
-            Méthodes de Communication professionnelle</li>
+            <?php echo $skill5->description; ?></li>
           <li>
             <i class="fa-li fa fa-check"></i>
-            Gestion de Projet Agile & Scrum</li>
+            <?php echo $skill6->description; ?></li>
         </ul>
       </div>
     </section>

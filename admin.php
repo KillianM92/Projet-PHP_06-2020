@@ -118,6 +118,8 @@ if (!isset($_SESSION['username']) || $_SESSION['username'] !== 'killian') {
 
 </section>
 
+<br>
+
 <p style="padding-left: 300px;">Pensez à modifier toutes les infos sinon la requête va insérer des valeurs vides...</p>
 
 <hr style="padding-left: 400px; width: 400px;">
@@ -240,7 +242,7 @@ if (!isset($_SESSION['username']) || $_SESSION['username'] !== 'killian') {
                     // Modification du deletion_flag lorsqu'on clique sur la valeur à supprimer
                     $pdo->exec("UPDATE formation SET deletion_flag = 1 WHERE id_formation= '$_GET[delete]' ");                 
                 }
-                header('Location: admin.php');
+
             }?>
 
     </form>

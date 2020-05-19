@@ -24,7 +24,7 @@ $skill4 = $result4->fetch(PDO::FETCH_OBJ);
 
 // Requêtes SQL pour l'id_skill 5
 
-$result5 = $pdo->query("SELECT description FROM skills WHERE id_skill = 5");
+$result5 = $pdo->query("SELECT description FROM skills WHERE id_skill = 10");
 $skill5 = $result5->fetch(PDO::FETCH_OBJ); 
 
 // Requêtes SQL pour l'id_skill 6

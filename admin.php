@@ -1,5 +1,13 @@
 <?php require("inc/header.inc.php"); ?>
 
+<?php require("data/data.inc.php"); ?>
+<?php 
+// phpinfo();
+session_start();
+if (!isset($_SESSION['username']) || $_SESSION['username'] !== 'killian') {
+    header('Location: connexion.php');
+}
+?>
 <br>
 
 <section style="padding-left: 400px;">
@@ -12,6 +20,9 @@
     </div>
     <input type="text" class="form-control" name="prenom" aria-describedby="basic-addon1">
     </div>
+        <form method="POST" action=""style="padding-left: 600px;">
+            <button type="submit" class="btn btn-danger" name="logout">Déconnexion</button>
+        </form>
 
     <button type="button" class="btn btn-outline-success">Ajouter</button>
     <button type="button" class="btn btn-outline-warning">Modifier</button>
@@ -19,6 +30,13 @@
 
     <br>
     <br>
+        // Mise en place de la déconnexion de la page admin.php
+        if (isset($_POST['logout']))
+        {
+        unset($_SESSION['username']);  
+        session_destroy();
+        header('Location: index.php');
+        }
 
     <div class="input-group mb-3" style="width: 400px;">
     <div class="input-group-prepend">

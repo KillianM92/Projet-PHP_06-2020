@@ -13,7 +13,6 @@
     <input type="password" class="form-control" name="password" placeholder="Password">
   </div>
   <button type="submit" class="btn btn-primary">Se connecter</button>
-  <button type="submit" class="btn btn-danger" name="logout">Déconnexion</button>
 </form>
 
 <hr style="padding-left: 400px; width: 400px;">
@@ -38,17 +37,5 @@ if ($_POST['username'] === $username1->username & $_POST['password'] === $passwo
 } else {
   echo '<h4 style="padding-left: 400px;">Erreur de connexion !</h4>';
   echo '<hr style="padding-left: 400px; width: 400px;">';
-}
-
-?>
-
-<?php
-
-// Mise en place de la déconnexion de la page 'admin'
-if (isset($_POST['logout']))
-{
-unset($_SESSION['username']);  
-session_destroy();
-header('Location: index.php');
 }
 ?>

@@ -1,5 +1,4 @@
 <?php require("inc/header.inc.php"); ?>
-
 <?php require("data/data.inc.php"); ?>
 <?php 
 // phpinfo();
@@ -12,24 +11,13 @@ if (!isset($_SESSION['username']) || $_SESSION['username'] !== 'killian') {
 
 <section style="padding-left: 400px;">
 
-    <h3>Section "A propos"</h3>
 
-    <div class="input-group mb-3" style="width: 400px;">
-    <div class="input-group-prepend">
-        <span class="input-group-text" id="basic-addon1">Prénom</span>
-    </div>
-    <input type="text" class="form-control" name="prenom" aria-describedby="basic-addon1">
-    </div>
         <form method="POST" action=""style="padding-left: 600px;">
             <button type="submit" class="btn btn-danger" name="logout">Déconnexion</button>
         </form>
 
-    <button type="button" class="btn btn-outline-success">Ajouter</button>
-    <button type="button" class="btn btn-outline-warning">Modifier</button>
-    <button type="button" class="btn btn-outline-danger">Supprimer</button>
+        <?php 
 
-    <br>
-    <br>
         // Mise en place de la déconnexion de la page admin.php
         if (isset($_POST['logout']))
         {
@@ -45,6 +33,16 @@ if (!isset($_SESSION['username']) || $_SESSION['username'] !== 'killian') {
                 echo $_SESSION['message'];
                 unset($_SESSION['message']);
             } ?>
+
+    <h3>Section "A propos"</h3>
+    <form action="admin_post.php" method="post">
+
+        <div class="input-group mb-3" style="width: 400px;">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Prénom</span>
+        </div>
+        <input type="text" class="form-control" name="prenom" aria-describedby="basic-addon1">
+        </div>
 
     <div class="input-group mb-3" style="width: 400px;">
     <div class="input-group-prepend">

@@ -99,13 +99,13 @@ if (!isset($_SESSION['username']) || $_SESSION['username'] !== 'killian') {
     <textarea class="form-control" name="description_about"></textarea>
     </div>
 
-    <button type="submit" class="btn btn-outline-success" name="add-1">Ajouter</button>  
-    <button type="submit" class="btn btn-outline-warning" name="modify-1">Modifier</button>
-    <button type="submit" class="btn btn-outline-danger" name="delete-1">Supprimer</button>
+    <br>
+
+    <div style="padding-left: 150px;">
+        <button type="submit" class="btn btn-outline-warning" name="modify-1">Modifier</button>
+    </div>
 
     </form>
-    <br>
-    <br>
 
 </section>
 
@@ -144,13 +144,31 @@ if (!isset($_SESSION['username']) || $_SESSION['username'] !== 'killian') {
         <input type="text" class="form-control" name="date_exp" aria-describedby="basic-addon1">
         </div>
 
-        <button type="submit" class="btn btn-outline-success" name="add-2">Ajouter</button>
-        <button type="submit" class="btn btn-outline-warning" name="modify-2">Modifier</button>
-        <button type="submit" class="btn btn-outline-danger" name="delete-2">Supprimer</button>
+        <div style="padding-left: 150px;">
+            <button type="submit" class="btn btn-outline-success" name="add-2">Ajouter</button>
+        </div>
+
+        <br>
+
+        <p>Veuillez cliquer sur l'expérience que vous voulez supprimer !</p>
+
+        <?php
+            $experiences = $pdo->query("SELECT * FROM experience WHERE deletion_flag IS NULL");
+
+            while ($experience = $experiences->fetch(PDO::FETCH_OBJ)) { ?>
+
+                <div style="width: 400px;">
+                <!-- Affichage des valeurs de la colonne description -->
+                    <a href="admin.php?delete=<?php echo $experience->id_exp; ?>"><?php echo $experience->metier . '<hr>';?></a>
+                </div>
+                <?php
+                if(!empty($_GET["delete"])) {
+                    // Modification du deletion_flag lorsqu'on clique sur la valeur à supprimer
+                    $pdo->exec("UPDATE experience SET deletion_flag = 1 WHERE id_exp= '$_GET[delete]' ");                 
+                }
+            }?>
 
     </form>
-    <br>
-    <br>
 
 </section>
 
@@ -189,13 +207,31 @@ if (!isset($_SESSION['username']) || $_SESSION['username'] !== 'killian') {
         <input type="text" class="form-control" name="date_formation" aria-describedby="basic-addon1">
         </div>
 
-        <button type="submit" class="btn btn-outline-success" name="add-3">Ajouter</button>
-        <button type="submit" class="btn btn-outline-warning" name="modify-3">Modifier</button>
-        <button type="submit" class="btn btn-outline-danger" name="delete-3">Supprimer</button>
+        <div style="padding-left: 150px;">
+            <button type="submit" class="btn btn-outline-success" name="add-3">Ajouter</button>
+        </div>
+
+        <br>
+
+        <p>Veuillez cliquer sur la formation que vous voulez supprimer !</p>
+
+        <?php
+            $formations = $pdo->query("SELECT * FROM formation WHERE deletion_flag IS NULL");
+
+            while ($formation = $formations->fetch(PDO::FETCH_OBJ)) { ?>
+
+                <div style="width: 400px;">
+                <!-- Affichage des valeurs de la colonne description -->
+                    <a href="admin.php?delete=<?php echo $formation->id_formation; ?>"><?php echo $formation->lieu . '<hr>';?></a>
+                </div>
+                <?php
+                if(!empty($_GET["delete"])) {
+                    // Modification du deletion_flag lorsqu'on clique sur la valeur à supprimer
+                    $pdo->exec("UPDATE formation SET deletion_flag = 1 WHERE id_formation= '$_GET[delete]' ");                 
+                }
+            }?>
 
     </form>
-    <br>
-    <br>
 
 </section>
 
@@ -213,29 +249,31 @@ if (!isset($_SESSION['username']) || $_SESSION['username'] !== 'killian') {
         <textarea class="form-control" name="description_skill"></textarea>
         </div>
 
-        <button type="submit" class="btn btn-outline-success" name="add-4">Ajouter</button>
-        <button type="submit" class="btn btn-outline-warning" name="modify-4">Modifier</button>
+        <div style="padding-left: 150px; padding-top: 20px;">
+            <button type="submit" class="btn btn-outline-success" name="add-4">Ajouter</button>
+        </div>
+
         <br>
-        <br>
-        <p>Veuillez cliquer sur la valeur que vous voulez supprimer !</p>
+
+        <p>Veuillez cliquer sur la compétence que vous voulez supprimer !</p>
 
         <?php
-            $skills = $pdo->query("SELECT * FROM skills");
+            $skills = $pdo->query("SELECT * FROM skills WHERE deletion_flag IS NULL");
 
             while ($skill = $skills->fetch(PDO::FETCH_OBJ)) { ?>
 
-                <a href="admin.php?delete=<?php echo $skill->id_skill; ?>"><?php echo $skill->description . ' | ';?></a>
-
+                <div style="width: 400px;">
+                <!-- Affichage des valeurs de la colonne description -->
+                    <a href="admin.php?delete=<?php echo $skill->id_skill; ?>"><?php echo $skill->description . '<hr>';?></a>
+                </div>
                 <?php
                 if(!empty($_GET["delete"])) {
-                    // Affichage des valeurs de la colonne description et modification du deletion_flag lorsqu'on clique dessus
+                    // Modification du deletion_flag lorsqu'on clique sur la valeur à supprimer
                     $pdo->exec("UPDATE skills SET deletion_flag = 1 WHERE id_skill = '$_GET[delete]' ");                 
                 }
             }?>
 
     </form>
-    <br>
-    <br>
 
 </section>
 
@@ -253,13 +291,30 @@ if (!isset($_SESSION['username']) || $_SESSION['username'] !== 'killian') {
         <textarea class="form-control" name="description_interest"></textarea>
         </div>
 
-        <button type="submit" class="btn btn-outline-success" name="add-5">Ajouter</button>
-        <button type="submit" class="btn btn-outline-warning">Modifier</button>
-        <button type="submit" class="btn btn-outline-danger">Supprimer</button>
-    
+        <div style="padding-left: 150px; padding-top: 20px;">
+            <button type="submit" class="btn btn-outline-success" name="add-5">Ajouter</button>
+        </div>
+
+        <br>
+        <p>Veuillez cliquer sur le centre d'intérêts que vous voulez supprimer !</p>
+
+        <?php
+            $interests = $pdo->query("SELECT * FROM interest WHERE deletion_flag IS NULL");
+
+            while ($interest = $interests->fetch(PDO::FETCH_OBJ)) { ?>
+
+                <div style="width: 400px;">
+                <!-- Affichage des valeurs de la colonne description -->
+                    <a href="admin.php?delete=<?php echo $interest->id_interest; ?>"><?php echo $interest->description . '<hr>';?></a>
+                </div>
+                <?php
+                if(!empty($_GET["delete"])) {
+                    // Modification du deletion_flag lorsqu'on clique sur la valeur à supprimer
+                    $pdo->exec("UPDATE interest SET deletion_flag = 1 WHERE id_interest = '$_GET[delete]' ");                 
+                }
+            }?>
+
     </form>
-    <br>
-    <br>
 
 </section>
 
@@ -277,13 +332,30 @@ if (!isset($_SESSION['username']) || $_SESSION['username'] !== 'killian') {
         <textarea class="form-control" name="description_award"></textarea>
         </div>
 
-        <button type="submit" class="btn btn-outline-success" name="add-6">Ajouter</button>
-        <button type="submit" class="btn btn-outline-warning" name="modify-6">Modifier</button>
-        <button type="submit" class="btn btn-outline-danger" name="delete-6">Supprimer</button>
+        <div style="padding-left: 150px; padding-top: 20px;">
+            <button type="submit" class="btn btn-outline-success" name="add-6">Ajouter</button>
+        </div>
+
+        <br>
+        <p>Veuillez cliquer sur le diplôme que vous voulez supprimer !</p>
+
+        <?php
+            $awards = $pdo->query("SELECT * FROM diplomes WHERE deletion_flag IS NULL");
+
+            while ($award = $awards->fetch(PDO::FETCH_OBJ)) { ?>
+
+                <div style="width: 400px;">
+                <!-- Affichage des valeurs de la colonne description -->
+                    <a href="admin.php?delete=<?php echo $award->id_diplome; ?>"><?php echo $award->description . '<hr>';?></a>
+                </div>
+                <?php
+                if(!empty($_GET["delete"])) {
+                    // Modification du deletion_flag lorsqu'on clique sur la valeur à supprimer
+                    $pdo->exec("UPDATE diplomes SET deletion_flag = 1 WHERE id_diplome = '$_GET[delete]' ");                 
+                }
+            }?>
 
     </form>
-    <br>
-    <br>
 
 </section>
 

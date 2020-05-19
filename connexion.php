@@ -28,15 +28,13 @@
 <?php
 session_start();
 
-$_SESSION['username'] = $_POST['username'];
-$_SESSION['password'] = $_POST['password'];
-
 // var_dump($_SESSION);
 
-if ($_SESSION['username'] == $username1->username & $_SESSION['password'] == $password1->password) {
+if ($_POST['username'] === $username1->username & $_POST['password'] === $password1->password) {
   echo '<h4 style="padding-left: 400px;">Connexion réussie !!!</h4>';
   echo '<hr style="padding-left: 400px; width: 400px;">';
-  include("admin.php");
+  $_SESSION['username'] = $_POST['username'];
+  header('Location: admin.php');
 } else {
   echo '<h4 style="padding-left: 400px;">Erreur de connexion !</h4>';
   echo '<hr style="padding-left: 400px; width: 400px;">';
@@ -49,8 +47,7 @@ if ($_SESSION['username'] == $username1->username & $_SESSION['password'] == $pa
 // Mise en place de la déconnexion de la page 'admin'
 if (isset($_POST['logout']))
 {
-unset($_SESSION['username']); 
-unset($_SESSION['password']); 
+unset($_SESSION['username']);  
 session_destroy();
 header('Location: index.php');
 }

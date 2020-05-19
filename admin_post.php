@@ -10,30 +10,12 @@ if (!isset($_POST)) {
     header('Location: admin.php');
 }
 
-// Requêtes d'ajout de données pour les 6 sections.
+// Requêtes d'ajout de données pour les 5 sections car je ne trouve pas ça utile de rajouter un utilisateur puisque la page a pour but d'être un CV.
 // On utilise le nom du bouton défini dans le formulaire pour cibler l'action d'ajout
 // Ensuite on effectue la requête pour tout le formulaire donc il faut bien penser à ajouter toutes les infos d'un coup !
 // Pour finir, l'utilisateur est redirigé vers la page admin.php avec un message qui s'affiche à côté du bouton "Ajouter".
 
 // Syntaxe : on met les noms de table entre `` (ALTGR + 7) pour que SQL nous affiche pas d'erreur et qu'il puisse bien comprendre le type de données récupérées comme c'est le cas avec les colonne date et description. 
-
-
-        // Requête d'ajout pour la table about
-
-        if (isset($_POST['add-1'])) {
-            $requete1sql = "INSERT INTO `about` 
-                            SET `prenom`= '".$_POST['prenom']."', 
-                                `nom`= '".$_POST['nom']."',
-                                `adresse`= '".$_POST['adresse']."',
-                                `ville`= '".$_POST['ville']."',
-                                `province`= '".$_POST['province']."',
-                                `codepostal`= '".$_POST['codepostal']."',
-                                `numero_tel`= '".$_POST['tel']."',
-                                `email`= '".$_POST['email']."',
-                                `description`= '".$_POST['description_about']."';";
-            $result1 = $pdo->exec($requete1sql);
-            $_SESSION['message'] = "L'enregistrement a été fait.";
-        }
 
 
         // Requête d'ajout pour la table experience

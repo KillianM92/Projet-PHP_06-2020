@@ -73,6 +73,27 @@ if (!isset($_POST)) {
             $_SESSION['message'] = "L'enregistrement a été fait.";
         }
 
+
+        //Requête de mofification pour la table about
+        // C'est la seule de mon site car je trouve que c'est la seule table susceptible de modification (la plus logique en tout cas)
+        // car on peut changer de numéro de téléphone, d'adresse mais pas de formation ou d'expérience professionnelle
+
+        if (isset($_POST['modify-1'])){
+
+            $requete7sql = "UPDATE `about` 
+            SET `prenom`= '".$_POST['prenom']."', 
+                `nom`= '".$_POST['nom']."',
+                `adresse`= '".$_POST['adresse']."',
+                `ville`= '".$_POST['ville']."',
+                `province`= '".$_POST['province']."',
+                `codepostal`= '".$_POST['codepostal']."',
+                `numero_tel`= '".$_POST['tel']."',
+                `email`= '".$_POST['email']."',
+                `description`= '".$_POST['description_about']."';";
+            $result7 = $pdo->exec($requete7sql);
+            $_SESSION['message_edit'] = "Les modifications ont été effectuées.";
+        } 
+
 // Redirection vers la page admin.php lorsque la requête a été effectuée
 header('Location: admin.php');
 

@@ -25,13 +25,22 @@ if (!isset($_SESSION['username']) || $_SESSION['username'] !== 'killian') {
         header('Location: index.php');
         }
 
-        // Affichage du message d'ajout si ce dernier a besoin d'être affiché
+        // Affichage du message d'ajout si ce dernier a besoin d'être affiché.
         // Il est ensuite supprimé grâce à l'attribut unset($_SESSION['message']).
         
         if (isset($_SESSION['message'])) {
                 echo $_SESSION['message'];
                 unset($_SESSION['message']);
-            } ?>
+            } 
+            
+        // Affichage du message de modification si ce dernier doit être affiché.
+        // Il est ensuite supprimé grâce à l'attribut unset($_SESSION['message_edit']).    
+
+        if(isset($_SESSION['message_edit'])) {
+            echo $_SESSION['message_edit'];
+            unset($_SESSION['message_edit']);
+        }?>
+        
 
     <h3>Section "A propos"</h3>
     <form action="admin_post.php" method="post">
@@ -108,6 +117,8 @@ if (!isset($_SESSION['username']) || $_SESSION['username'] !== 'killian') {
     </form>
 
 </section>
+
+<p style="padding-left: 300px;">Pensez à modifier toutes les infos sinon la requête va insérer des valeurs vides...</p>
 
 <hr style="padding-left: 400px; width: 400px;">
 
@@ -229,6 +240,7 @@ if (!isset($_SESSION['username']) || $_SESSION['username'] !== 'killian') {
                     // Modification du deletion_flag lorsqu'on clique sur la valeur à supprimer
                     $pdo->exec("UPDATE formation SET deletion_flag = 1 WHERE id_formation= '$_GET[delete]' ");                 
                 }
+                header('Location: admin.php');
             }?>
 
     </form>
